@@ -1,5 +1,6 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { MdOutlineEdit } from "react-icons/md";
 
 function App() {
 
@@ -8,10 +9,16 @@ function App() {
       {/* roles and permissions container */}
       <div className="container-fluid py-3 mx-auto">
 
-        {/* header*/}
-        <h4 className='py-2' style={{color:'rgb(11, 109, 237)'}}>Roles & Permissions</h4>
+        {/* header */}
+        <div style={{display:'flex', justifyContent:'space-between'}}>
+          
+          <h4 className='py-2' style={{color:'rgb(11, 109, 237)'}}>Roles & Permissions</h4>
 
-        {/* box */}
+          <MdOutlineEdit style={{border:'2px solid rgb(11, 109, 237)', margin:'10px', fontSize:'28px', padding:'2px', borderRadius:'3px', color:'rgb(11, 109, 237)'}} />
+          
+        </div>
+
+        {/* admin / super admin box */}
         <ul className="list-group">
 
         <li className="list-group-item p-2 px-4" style={{backgroundColor:'rgb(181, 184, 183)', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
@@ -30,10 +37,10 @@ function App() {
 
         </li>
 
-        <li className="list-group-item">
         {/* user */}
+        <li className="list-group-item">
         <div className="row">
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -42,7 +49,7 @@ function App() {
             </div>
           </div>
 
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -51,7 +58,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch d-flex align-items-md-center">
               <input className="form-check-input d-flex align-items-md-center" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label d-flex align-items-md-center" for="checkNativeSwitch">
@@ -60,7 +67,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -69,7 +76,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -81,10 +88,10 @@ function App() {
         </div>
         </li>
 
-        <li className="list-group-item">
         {/* role */}
+        <li className="list-group-item">
         <div className="row">
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -93,7 +100,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -102,7 +109,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -111,7 +118,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -120,7 +127,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -133,10 +140,10 @@ function App() {
 
         </li>
 
-        <li className="list-group-item">
         {/* product */}
+        <li className="list-group-item">
         <div className="row">
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -145,7 +152,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -154,7 +161,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -163,7 +170,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -172,7 +179,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -185,10 +192,10 @@ function App() {
 
         </li>
 
-        <li className="list-group-item"> 
         {/* order */}
+        <li className="list-group-item">
         <div className="row">
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -197,7 +204,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -206,7 +213,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -215,7 +222,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -224,7 +231,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -237,10 +244,10 @@ function App() {
 
         </li>
 
-        <li className="list-group-item">
         {/* supplier */}
+        <li className="list-group-item">
         <div className="row">
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -249,7 +256,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -258,7 +265,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -267,7 +274,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -276,7 +283,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -289,10 +296,10 @@ function App() {
 
         </li>
 
-        <li className="list-group-item">
         {/* report */}
+        <li className="list-group-item">
         <div className="row">
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -301,7 +308,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-3">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -310,7 +317,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -319,7 +326,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
@@ -328,7 +335,7 @@ function App() {
               </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 col-lg">
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch />
               <label className="form-check-label" for="checkNativeSwitch">
